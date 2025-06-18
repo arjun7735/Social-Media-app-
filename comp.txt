@@ -1,0 +1,14 @@
+    {/* Header */}
+      <View style={styles.header}>
+        <TouchableOpacity onPress={navigateToSearch} style={styles.headerButton}>
+          <Image source={require('./Buttons/search.png')} style={styles.searchIcon} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={navigateToMessagesScreen} style={styles.headerButton}>
+          <Image source={require('./Buttons/DM.png')} style={styles.headerIcon} />
+        </TouchableOpacity>
+        
+      </View>
+import MessagesScreen from './screens/MessagesScreen';
+     import MiniFilmsScreen from './screens/MiniFilmsScreen';
+      <Stack.Screen name="MiniFilms" component={MiniFilmsScreen} />
+      <Stack.Screen name="Messages" component={MessagesScreen} />
